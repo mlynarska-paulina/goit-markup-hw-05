@@ -48,22 +48,24 @@ body {
 }
 .box-navigation {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 24px 0 25px;
-  column-gap: 46px;
+}
+.navigation {
+  display: flex;
+  column-gap: 93px;
 }
 .box-menu {
   display: flex;
   column-gap: 46px;
   align-items: center;
-  margin-left: -250px;
 }
 .box-contact {
   display: flex;
   align-items: center;
   gap: 30px;
   cursor: pointer;
+  padding-left: 290px;
 }
 .box-contact-secondary {
   display: flex;
@@ -149,7 +151,7 @@ li:hover svg {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-light);
-  padding: 200px 200px 30px 200px;
+  padding: 200px 0px 30px;
 }
 .offer-button {
   background-color: var(--color-active);
@@ -491,17 +493,16 @@ address {
 .is-hidden .modal {
   transform: scale(0);
 }
+.close-modal-box {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px;
+}
 .close-modal-button {
   background: var(--color-light);
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 30px;
   height: 30px;
   border-radius: 50%;
-}
-.modal-button-box {
-  display: flex;
-  justify-content: flex-end;
-  padding: 8px 8px;
-}
-.close-modal-icon {
 }
